@@ -1,0 +1,23 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a[5];
+    int *p = a;
+
+    cout << "Enter 5 elements: ";
+    for (int i = 0; i < 5; i++)
+    {
+        cin >> a[i];
+    }
+
+    cout << "Array elements: ";
+    for (int i = 0; i < 5; i++)
+    {
+        cout << *(p + i) << " ";
+    }
+
+    return 0;
+}
